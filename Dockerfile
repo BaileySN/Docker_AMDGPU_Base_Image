@@ -3,9 +3,6 @@ FROM ubuntu:16.04
 LABEL maintainer="Bailey"
 LABEL description="Ubuntu with AMD graphic support thanks to calvintam236"
 
-#ENV AMDGPUDRIVERFILE="amdgpu-pro-18.20-606296.tar.xz"
-#ENV AMDGPUDIRNAME="amdgpu-pro-18.20-606296"
-
 ENV AMDGPUDRIVERFILE="amdgpu-pro-17.40-492261.tar.xz"
 ENV AMDGPUDIRNAME="amdgpu-pro-17.40-492261"
 
