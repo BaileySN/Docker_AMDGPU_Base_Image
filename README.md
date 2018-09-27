@@ -16,7 +16,7 @@ https://hub.docker.com/r/guenterbailey/amdgpu/
 
 # AMD Version in Container ?
 I have notized, when i use different AMD driver, then not all GPU's working proberly.
-So i have build the version 17.40 for amd-gpu-pro-17.30.xxx and 18.30 for amdgpu-pro-18.30-xxx.
+So i have build the version 17.40 for amd-gpu-pro-17.40.xxx and 18.30 for amdgpu-pro-18.30-xxx.
 
 To use the prebuild Docker image, check before the AMD Driver version with the version in tag by dockerhub.
 the last 4 digits in the tagname is the used AMD Version.
