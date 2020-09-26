@@ -12,7 +12,7 @@ RUN dpkg --add-architecture i386 && \
     apt-get -y --no-install-recommends install ca-certificates curl xz-utils
 
 RUN curl -O https://download.b2go.cloud/AMD-GPU-PRO/$AMDGPUDRIVERFILE && \
-    tar -Jxvf $AMDGPUDRIVERFILE && rm $AMDGPUDRIVERFILE && \
+    tar -xvf $AMDGPUDRIVERFILE && rm $AMDGPUDRIVERFILE && \
     ./$AMDGPUDIRNAME/amdgpu-install -y --headless --opencl=legacy,pal && \
     rm -rf $AMDGPUDIRNAME && \
     apt-get -y remove ca-certificates curl xz-utils && \
