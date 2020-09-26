@@ -16,8 +16,8 @@ RUN dpkg --add-architecture i386 && \
 
 # only used to speedup build
 #COPY $AMDGPUDRIVERFILE /tmp/    
-RUN curl -O http://download.b2go.cloud/AMD-GPU-PRO/$AMDGPUDRIVERFILE && \
-    tar -Jxvf $AMDGPUDRIVERFILE && rm $AMDGPUDRIVERFILE && \
+RUN curl -O https://download.b2go.cloud/AMD-GPU-PRO/$AMDGPUDRIVERFILE && \
+    tar -xvf $AMDGPUDRIVERFILE && rm $AMDGPUDRIVERFILE && \
     ./$AMDGPUDIRNAME/amdgpu-pro-install -y --compute && \
     rm -rf $AMDGPUDIRNAME && \
     apt-get -y remove ca-certificates curl xz-utils && \
